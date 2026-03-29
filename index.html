@@ -84,12 +84,14 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
       gap: 24px;
     }
 
     /* Card */
     .card {
-      display: block;
+      display: flex;
+      flex-direction: column;
       text-decoration: none;
       color: inherit;
       background: var(--card-bg);
@@ -228,7 +230,7 @@
 
         <a href="https://whatsapp-poker-production.up.railway.app/" target="_blank" rel="noopener" class="card card--house">
           <div class="card-head">
-            <div class="card-icon">&#x1F3E0;</div>
+            <div class="card-icon">&#x1F0CF;</div>
             <div class="card-title">The House</div>
           </div>
           <p class="card-desc">A WhatsApp poker bot that can be invoked using simple commands inside a group chat.</p>
