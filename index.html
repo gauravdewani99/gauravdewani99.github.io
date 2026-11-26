@@ -156,7 +156,8 @@
 
     .card--mapsterdam { border-color: rgba(251, 146, 60, 0.35); }
     .card--mapsterdam:hover { box-shadow: 0 0 24px rgba(251, 146, 60, 0.15); border-color: rgba(251, 146, 60, 0.6); }
-    .card--mapsterdam .card-icon { background: rgba(251, 146, 60, 0.15); }
+    .card--mapsterdam .card-icon { background: none; overflow: hidden; }
+    .card--mapsterdam .card-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
     .card--mapsterdam .card-title { color: #fb923c; }
 
     .card--bdt       { border-color: rgba(244, 114, 182, 0.35); }
@@ -266,7 +267,7 @@
 
         <a href="https://mapsterdam.vercel.app/" target="_blank" rel="noopener" class="card card--mapsterdam">
           <div class="card-head">
-            <div class="card-icon">&#x1F6B2;</div>
+            <div class="card-icon"><img src="mapsterdam-icon.svg" alt="Mapsterdam"></div>
             <div class="card-title">Mapsterdam</div>
           </div>
           <p class="card-desc">A GeoGuessr-inspired game set in Amsterdam. Explore the street, get an AI clue, and guess where you are.</p>
