@@ -147,10 +147,11 @@
     .card--sortify .card-icon { background: rgba(74, 222, 128, 0.15); }
     .card--sortify .card-title { color: #4ade80; }
 
-    .card--soulspace { border-color: rgba(99, 102, 241, 0.35); }
-    .card--soulspace:hover { box-shadow: 0 0 24px rgba(99, 102, 241, 0.15); border-color: rgba(99, 102, 241, 0.6); }
-    .card--soulspace .card-icon { background: rgba(99, 102, 241, 0.15); }
-    .card--soulspace .card-title { color: #818cf8; }
+    .card--wavelength { border-color: rgba(59, 130, 246, 0.35); }
+    .card--wavelength:hover { box-shadow: 0 0 24px rgba(59, 130, 246, 0.15); border-color: rgba(59, 130, 246, 0.6); }
+    .card--wavelength .card-icon { background: none; overflow: hidden; }
+    .card--wavelength .card-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+    .card--wavelength .card-title { color: #60a5fa; }
 
     .card--mapsterdam { border-color: rgba(251, 146, 60, 0.35); }
     .card--mapsterdam:hover { box-shadow: 0 0 24px rgba(251, 146, 60, 0.15); border-color: rgba(251, 146, 60, 0.6); }
@@ -229,6 +230,14 @@
     <div class="grid-container">
       <div class="grid">
 
+        <a href="https://wavelength-3d.vercel.app/" target="_blank" rel="noopener" class="card card--wavelength">
+          <div class="card-head">
+            <div class="card-icon"><img src="favicon.png" alt="Wavelength"></div>
+            <div class="card-title">Wavelength</div>
+          </div>
+          <p class="card-desc">An immersive 3D version of my favourite board game, Wavelength, built using Claude's Blender plug-in.</p>
+        </a>
+
         <a href="https://whatsapp-poker-production.up.railway.app/" target="_blank" rel="noopener" class="card card--house">
           <div class="card-head">
             <div class="card-icon">&#x1F0CF;</div>
@@ -251,14 +260,6 @@
             <div class="card-title">Sortify</div>
           </div>
           <p class="card-desc">A tool built on top of Spotify Web API to automatically sort your Liked Songs into playlists.</p>
-        </a>
-
-        <a href="https://soul-space.me/" target="_blank" rel="noopener" class="card card--soulspace">
-          <div class="card-head">
-            <div class="card-icon">&#x1F30D;</div>
-            <div class="card-title">Soulspace</div>
-          </div>
-          <p class="card-desc">A social journaling and meditation app. A personalized AI therapist that gets better the more you journal!</p>
         </a>
 
         <a href="https://mapsterdam.vercel.app/" target="_blank" rel="noopener" class="card card--mapsterdam">
